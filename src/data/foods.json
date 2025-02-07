@@ -3,12 +3,14 @@
     "id": 1,
     "name": "Pasta",
     "Ingredient": ["Pasta", "Tomato"],
-    "Meal Type": ["Launch", "Dinner"]
+    "Meal Type": ["Launch", "Dinner"],
+    "Cuisine": ["Italian", "Classic"]
   },
   {
     "id": 2,
     "name": "Pizza",
     "Ingredient": ["Onion", "Tomato"],
-    "Meal Type": ["Launch", "Dinner"]
+    "Meal Type": ["Launch", "Dinner"],
+    "Cuisine": ["Italian", "Classic", "American"]
   }
 ]

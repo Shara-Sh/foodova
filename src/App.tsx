@@ -1,3 +1,4 @@
+import FilterCuisine from "./components/FilterCuisine";
 import FilterIngredient from "./components/FilterIngredient";
 import FilterMealType from "./components/FilterMealType";
 import Header from "./components/Header";
@@ -15,6 +16,7 @@ function App() {
           <div className="space-y-4 md:w-1/4">
             <FilterIngredient />
             <FilterMealType />
+            <FilterCuisine />
           </div>
         </div>
       </div>
