@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Pasta",
+    "Ingredient": ["Pasta", "Tomato"],
+    "Meal Type": ["Launch", "Dinner"]
+  },
+  {
+    "id": 2,
+    "name": "Pizza",
+    "Ingredient": ["Onion", "Tomato"],
+    "Meal Type": ["Launch", "Dinner"]
+  }
+]
