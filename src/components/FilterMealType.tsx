@@ -1,7 +1,7 @@
 import foods from "../data/foods.json";
 
 function FilterMealType() {
-  const allMealType = foods.flatMap((food) => food["Meal Type"]);
+  const allMealType = foods.flatMap((food) => food["mealType"]);
 
   const uniqueMealTypes = [...new Set(allMealType)].sort((a, b) =>
     a.localeCompare(b),

@@ -1,12 +1,11 @@
 import foods from "../data/foods.json";
 
 function FilterIngredient() {
-  const allIngredient = foods.flatMap((food) => food.Ingredient);
+  const allIngredient = foods.flatMap((food) => food.ingredients);
 
   const uniqueIngredients = [...new Set(allIngredient)].sort((a, b) =>
     a.localeCompare(b),
   );
-  console.log(uniqueIngredients);
 
   return (
     <div className="bg-lightgray flex flex-col gap-3 rounded-xl p-4">
