@@ -1,4 +1,5 @@
 import FilterIngredient from "./components/FilterIngredient";
+import FilterMealType from "./components/FilterMealType";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 
@@ -11,8 +12,9 @@ function App() {
           <div className="flex-1">
             <SearchBar />
           </div>
-          <div className="md:w-1/4">
+          <div className="space-y-4 md:w-1/4">
             <FilterIngredient />
+            <FilterMealType />
           </div>
         </div>
       </div>
