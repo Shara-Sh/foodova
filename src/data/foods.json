@@ -1,38 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Pasta",
-    "image": "https://pixabay.com/photos/pasta-italian-cuisine-dish-3547078/",
+    "name": "Mashed Potatoes",
     "description": "Cheese pasta",
-    "ingredients": ["Pasta", "Tomato", "Cheese"],
-    "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["Italian", "Classic"]
-  },
-  {
-    "id": 2,
-    "name": "Pizza",
-    "image": "https://pixabay.com/photos/pasta-italian-cuisine-dish-3547078/",
-    "description": "Pizza with tomato",
-    "ingredients": ["Onion", "Tomato", "Cheese"],
-    "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["Italian", "Classic", "American"]
-  },
-  {
-    "id": 3,
-    "name": "Salad",
-    "image": "https://pixabay.com/photos/pasta-italian-cuisine-dish-3547078/",
-    "description": "Fresh salad",
-    "ingredients": ["Onion", "Tomato", "Lettuce"],
-    "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["Italian", "Classic", "American"]
-  },
-  {
-    "id": 4,
-    "name": "Burger",
-    "image": "https://pixabay.com/photos/pasta-italian-cuisine-dish-3547078/",
-    "description": "Classic burger",
-    "ingredients": ["Onion", "Tomato", "Lettuce", "Cheese", "Bun"],
-    "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["American"]
+    "ingredients": ["Potato"],
+    "mealType": ["Breakfast", "Lunch", "Dinner"],
+    "cuisine": ["Irish"]
   }
 ]

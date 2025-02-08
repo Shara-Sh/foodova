@@ -65,6 +65,7 @@ function App() {
                       key={index}
                       name={food.name}
                       description={food.description}
+                      image={food.id}
                       ingredientTags={food.ingredients}
                       mealTypeTags={food["mealType"]}
                       cuisineTags={food.cuisine}
@@ -77,7 +78,7 @@ function App() {
               )}
             </div>
           </div>
-          <div className="hidden space-y-4 md:w-1/4">
+          <div className="hidden space-y-4 md:block md:w-1/4">
             <FilterIngredient />
             <FilterMealType />
             <FilterCuisine />

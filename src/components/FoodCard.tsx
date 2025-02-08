@@ -5,6 +5,7 @@ import { Soup } from "lucide-react";
 type FoodCardProps = {
   name: string;
   description: string;
+  image: number;
   ingredientTags: string[];
   mealTypeTags: string[];
   cuisineTags: string[];
@@ -13,6 +14,7 @@ type FoodCardProps = {
 function FoodCard({
   name,
   description,
+  image,
   ingredientTags,
   mealTypeTags,
   cuisineTags,
@@ -33,7 +35,7 @@ function FoodCard({
     <div className="bg-lightgray flex h-[336] flex-col gap-3 rounded-xl p-4">
       <div className="flex gap-3">
         <img
-          src="https://cdn.pixabay.com/photo/2017/11/25/17/17/sandwich-2977251_1280.jpg"
+          src={`../assets/foods/${image}.png`}
           alt={name}
           className="aspect-square w-28 rounded-xl"
         />
