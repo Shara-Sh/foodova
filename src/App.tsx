@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import FoodCard from "./components/FoodCard";
 import foods from "./data/foods.json";
+import { Filter } from "lucide-react";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -50,9 +51,10 @@ function App() {
             </div>
           </div>
           <button
-            className="bg-lightgray text-lighttext hover:bg-lightgray-200 w-fit cursor-pointer rounded-xl px-4 py-2 hover:text-white md:hidden"
+            className="bg-lightgray text-lighttext hover:bg-lightgray-200 flex w-fit cursor-pointer items-center gap-2 rounded-xl px-4 py-2 hover:text-white md:hidden"
             onClick={() => setIsFilter(!isFilter)}
           >
+            <Filter size={20} />
             Filter
           </button>
           {isFilter ? (
