@@ -2,4 +2,12 @@
 
 @theme {
   --color-darkbg: #16181c;
+  --color-lightgray: #26292f;
+  --color-darkgray: #1e1e1e;
+  --color-lightgray-200: #4b4e55;
+  --color-lighttext: #7e858f;
+}
+
+body {
+  background: #16181c;
 }

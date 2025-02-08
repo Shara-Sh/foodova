@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "name": "Mashed Potatoes",
+    "description": "boiled or steamed potatoes with butter, salt and pepper.",
+    "ingredients": ["Potato"],
+    "mealType": ["Breakfast", "Lunch", "Dinner"],
+    "cuisine": ["Irish"]
+  }
+]
