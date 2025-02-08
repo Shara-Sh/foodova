@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FilterCuisine from "./components/FilterCuisine";
 import FilterIngredient from "./components/FilterIngredient";
 import FilterMealType from "./components/FilterMealType";
@@ -9,26 +9,26 @@ import foods from "./data/foods.json";
 import { Filter } from "lucide-react";
 
 function App() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isFilter, setIsFilter] = useState(window.innerWidth >= 1024);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setScreenWidth(window.innerWidth);
 
-      // Always true for laptops, false for mobile
-      if (window.innerWidth >= 1024) {
-        setIsFilter(true);
-      } else {
-        setIsFilter(false);
-      }
-    };
-    window.addEventListener("resize", handleResize);
+  //     // Always true for laptops, false for mobile
+  //     if (window.innerWidth >= 1024) {
+  //       setIsFilter(true);
+  //     } else {
+  //       setIsFilter(false);
+  //     }
+  //   };
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   return (
     <div className="mb-4 text-white">
@@ -37,6 +37,20 @@ function App() {
         <div className="flex flex-col gap-4 md:flex-row-reverse">
           <div className="flex-1 space-y-4">
             <SearchBar />
+            <button
+              className="bg-lightgray text-lighttext hover:bg-lightgray-200 flex w-fit cursor-pointer items-center gap-2 rounded-xl px-4 py-2 hover:text-white md:hidden"
+              onClick={() => setIsFilter(!isFilter)}
+            >
+              <Filter size={20} />
+              Filter
+            </button>
+            {isFilter ? (
+              <div className="space-y-4 md:hidden">
+                <FilterIngredient />
+                <FilterMealType />
+                <FilterCuisine />
+              </div>
+            ) : null}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {foods.map((food, index) => (
                 <FoodCard
@@ -50,20 +64,11 @@ function App() {
               ))}
             </div>
           </div>
-          <button
-            className="bg-lightgray text-lighttext hover:bg-lightgray-200 flex w-fit cursor-pointer items-center gap-2 rounded-xl px-4 py-2 hover:text-white md:hidden"
-            onClick={() => setIsFilter(!isFilter)}
-          >
-            <Filter size={20} />
-            Filter
-          </button>
-          {isFilter ? (
-            <div className="space-y-4 md:w-1/4">
-              <FilterIngredient />
-              <FilterMealType />
-              <FilterCuisine />
-            </div>
-          ) : null}
+          <div className="hidden space-y-4 md:w-1/4">
+            <FilterIngredient />
+            <FilterMealType />
+            <FilterCuisine />
+          </div>
         </div>
       </div>
     </div>
