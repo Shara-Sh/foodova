@@ -1,7 +1,15 @@
 import foods from "../data/foods.json";
 import { Utensils } from "lucide-react";
 
-function FilterMealType() {
+type FilterMealTypeProps = {
+  onMealTypeSelect: (mealType: string) => void;
+  selectedMealTypes: string[];
+};
+
+function FilterMealType({
+  onMealTypeSelect,
+  selectedMealTypes,
+}: FilterMealTypeProps) {
   const allMealType = foods.flatMap((food) => food["mealType"]);
 
   const uniqueMealTypes = [...new Set(allMealType)].sort((a, b) =>
@@ -14,9 +22,17 @@ function FilterMealType() {
         <Utensils />
         Meal Type
       </h1>
-      <ul className="text-lighttext *:hover:bg-lightgray-200 font-semibold *:cursor-pointer *:rounded-xl *:px-2 *:py-1 *:hover:text-white">
+      <ul className="text-lighttext *:hover:bg-lightgray-200 space-y-1 font-semibold *:cursor-pointer *:rounded-xl *:px-2 *:py-1 *:hover:text-white">
         {uniqueMealTypes.map((mealType, index) => (
-          <li key={index}>{mealType}</li>
+          <li
+            key={index}
+            onClick={() => onMealTypeSelect(mealType)}
+            className={`${
+              selectedMealTypes.includes(mealType) ? "bg-white" : ""
+            }`}
+          >
+            {mealType}
+          </li>
         ))}
       </ul>
     </div>

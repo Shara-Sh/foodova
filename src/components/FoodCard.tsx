@@ -37,14 +37,15 @@ function FoodCard({
         <img
           src={`../assets/foods/${image}.png`}
           alt={name}
-          className="aspect-square w-28 rounded-xl"
+          className="aspect-square max-h-36 w-36 rounded-xl object-cover"
         />
         <div>
           <h1 className="text-xl font-semibold">{name}</h1>
-          <p className="text-lighttext">{description}</p>
+          <p className="text-lighttext md:hidden">{description}</p>
         </div>
       </div>
-      <div className="space-y-3">
+      <div className="flex h-full flex-col gap-3">
+        <p className="text-lighttext hidden flex-1 md:block">{description}</p>
         <div className="flex items-center gap-3">
           <CookingPot size={20} />
           <ul className="flex flex-wrap gap-3">
