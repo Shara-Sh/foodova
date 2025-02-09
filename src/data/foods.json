@@ -14,5 +14,13 @@
     "ingredients": ["Split Peas", "Dried Lime", "Potato", "Rice"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Iranian"]
+  },
+  {
+    "id": 3,
+    "name": "Seasonal Salad",
+    "description": "Classic Salad",
+    "ingredients": ["Tomato", "Carrot", "Cabbage"],
+    "mealType": ["Salad"],
+    "cuisine": ["Classic"]
   }
 ]

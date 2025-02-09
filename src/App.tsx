@@ -112,7 +112,7 @@ function App() {
                 />
               </div>
             ) : null}
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
               {filteredFoods.length > 0 ? (
                 [...filteredFoods]
                   .sort((a, b) => b.id - a.id)
