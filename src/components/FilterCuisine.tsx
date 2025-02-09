@@ -1,7 +1,15 @@
 import foods from "../data/foods.json";
 import { Soup } from "lucide-react";
 
-function FilterCuisine() {
+type FilterCuisineProps = {
+  onCuisineSelect: (ingredient: string) => void;
+  selectedCuisines: string[];
+};
+
+function FilterCuisine({
+  onCuisineSelect,
+  selectedCuisines,
+}: FilterCuisineProps) {
   const allCuisine = foods.flatMap((food) => food.cuisine);
 
   const uniqueCuisines = [...new Set(allCuisine)].sort((a, b) =>
@@ -14,9 +22,17 @@ function FilterCuisine() {
         <Soup />
         Cuisine
       </h1>
-      <ul className="text-lighttext *:hover:bg-lightgray-200 font-semibold *:cursor-pointer *:rounded-xl *:px-2 *:py-1 *:hover:text-white">
+      <ul className="text-lighttext *:hover:bg-lightgray-200 space-y-1 font-semibold *:cursor-pointer *:rounded-xl *:px-2 *:py-1 *:hover:text-white">
         {uniqueCuisines.map((cuisine, index) => (
-          <li key={index}>{cuisine}</li>
+          <li
+            key={index}
+            onClick={() => onCuisineSelect(cuisine)}
+            className={`${
+              selectedCuisines.includes(cuisine) ? "bg-white" : ""
+            }`}
+          >
+            {cuisine}
+          </li>
         ))}
       </ul>
     </div>

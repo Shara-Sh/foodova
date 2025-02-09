@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Gheimeh",
     "description": "stew consisting of diced mutton, tomatoes, split peas, onion, and dried lime, garnished with golden, thinly sliced crispy potatoes.",
-    "ingredients": ["Split Peas", "Dried Lime", "Potato"],
+    "ingredients": ["Split Peas", "Dried Lime", "Potato", "Rice"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Iranian"]
   }

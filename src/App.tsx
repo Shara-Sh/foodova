@@ -9,31 +9,78 @@ import foods from "./data/foods.json";
 import { Filter } from "lucide-react";
 
 function App() {
-  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [isFilter, setIsFilter] = useState(window.innerWidth >= 1024);
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
+  const [selectedMealTypes, setSelectedMealTypes] = useState<string[]>([]);
+  const [selectedCuisines, setSelectedCuisines] = useState<string[]>([]);
 
-  const filteredFoods = foods.filter((food) =>
-    food.name.toLowerCase().includes(searchQuery.toLowerCase()),
-  );
+  const filteredFoods = foods
+    .filter((food) =>
+      food.name.toLowerCase().includes(searchQuery.toLowerCase()),
+    )
+    .filter((food) =>
+      selectedIngredients.length === 0
+        ? true // If no ingredients are selected, show all
+        : selectedIngredients.every((ingredient) =>
+            food.ingredients.includes(ingredient),
+          ),
+    )
+    .filter((food) =>
+      selectedMealTypes.length === 0
+        ? true // If no ingredients are selected, show all
+        : selectedMealTypes.every((mealType) =>
+            food.mealType.includes(mealType),
+          ),
+    )
+    .filter((food) =>
+      selectedCuisines.length === 0
+        ? true // If no ingredients are selected, show all
+        : selectedCuisines.every((cuisine) => food.cuisine.includes(cuisine)),
+    )
+    .sort((a, b) => b.id - a.id); // Sort by ID (newest first)
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setScreenWidth(window.innerWidth);
+  const handleIngredientSelect = (ingredient: string | null) => {
+    if (ingredient === null) {
+      // Handle clearing all selected ingredients
+      setSelectedIngredients([]);
+    } else {
+      setSelectedIngredients(
+        (prevSelected) =>
+          prevSelected.includes(ingredient)
+            ? prevSelected.filter((item) => item !== ingredient) // Deselect if already selected
+            : [...prevSelected, ingredient], // Add if not selected
+      );
+    }
+  };
 
-  //     // Always true for laptops, false for mobile
-  //     if (window.innerWidth >= 1024) {
-  //       setIsFilter(true);
-  //     } else {
-  //       setIsFilter(false);
-  //     }
-  //   };
-  //   window.addEventListener("resize", handleResize);
+  const handleMealTypeSelect = (mealType: string | null) => {
+    if (mealType === null) {
+      // Handle clearing all selected ingredients
+      setSelectedMealTypes([]);
+    } else {
+      setSelectedMealTypes(
+        (prevSelected) =>
+          prevSelected.includes(mealType)
+            ? prevSelected.filter((item) => item !== mealType) // Deselect if already selected
+            : [...prevSelected, mealType], // Add if not selected
+      );
+    }
+  };
 
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
+  const handleCuisineSelect = (cuisine: string | null) => {
+    if (cuisine === null) {
+      // Handle clearing all selected ingredients
+      setSelectedCuisines([]);
+    } else {
+      setSelectedCuisines(
+        (prevSelected) =>
+          prevSelected.includes(cuisine)
+            ? prevSelected.filter((item) => item !== cuisine) // Deselect if already selected
+            : [...prevSelected, cuisine], // Add if not selected
+      );
+    }
+  };
 
   return (
     <div className="mb-4 text-white">
@@ -51,9 +98,18 @@ function App() {
             </button>
             {isFilter ? (
               <div className="space-y-4 md:hidden">
-                <FilterIngredient />
-                <FilterMealType />
-                <FilterCuisine />
+                <FilterIngredient
+                  onIngredientSelect={handleIngredientSelect}
+                  selectedIngredients={selectedIngredients}
+                />
+                <FilterMealType
+                  onMealTypeSelect={handleMealTypeSelect}
+                  selectedMealTypes={selectedMealTypes}
+                />
+                <FilterCuisine
+                  onCuisineSelect={handleCuisineSelect}
+                  selectedCuisines={selectedCuisines}
+                />
               </div>
             ) : null}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -79,9 +135,18 @@ function App() {
             </div>
           </div>
           <div className="hidden space-y-4 md:block md:w-1/4">
-            <FilterIngredient />
-            <FilterMealType />
-            <FilterCuisine />
+            <FilterIngredient
+              onIngredientSelect={handleIngredientSelect}
+              selectedIngredients={selectedIngredients}
+            />
+            <FilterMealType
+              onMealTypeSelect={handleMealTypeSelect}
+              selectedMealTypes={selectedMealTypes}
+            />
+            <FilterCuisine
+              onCuisineSelect={handleCuisineSelect}
+              selectedCuisines={selectedCuisines}
+            />
           </div>
         </div>
       </div>
