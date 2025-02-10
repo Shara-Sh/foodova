@@ -22,5 +22,13 @@
     "ingredients": ["Tomato", "Carrot", "Cabbage"],
     "mealType": ["Salad"],
     "cuisine": ["Classic"]
+  },
+  {
+    "id": 4,
+    "name": "Cheesy Chicken Nuggets",
+    "description": "Crispy on the outside and tender on the inside",
+    "ingredients": ["Chicken", "Cheese", "Salami"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["United States"]
   }
 ]
