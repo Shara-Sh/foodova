@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Gheimeh",
     "description": "stew consisting of diced mutton, tomatoes, split peas, onion, and dried lime, garnished with golden, thinly sliced crispy potatoes.",
-    "ingredients": ["Split Peas", "Dried Lime", "Potato", "Rice"],
+    "ingredients": ["Split Peas", "Potato", "Rice"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Iranian"]
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "name": "Seasonal Salad",
     "description": "Classic Salad",
-    "ingredients": ["Tomato", "Carrot", "Cabbage"],
+    "ingredients": ["Tomato", "Carrot", "Lettuce"],
     "mealType": ["Salad"],
     "cuisine": ["Classic"]
   },
@@ -38,5 +38,13 @@
     "ingredients": ["Chicken", "Rice"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Iranian"]
+  },
+  {
+    "id": 6,
+    "name": "Seasonal Salad",
+    "description": "Colorful and delicious side dish! It's made with cabbage",
+    "ingredients": ["Carrot", "Cabbage"],
+    "mealType": ["Salad"],
+    "cuisine": ["Netherlands"]
   }
 ]
