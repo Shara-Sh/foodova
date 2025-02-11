@@ -30,5 +30,13 @@
     "ingredients": ["Chicken", "Cheese", "Salami"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["United States"]
+  },
+  {
+    "id": 5,
+    "name": "Tahchin",
+    "description": "Iranian rice dish primarily consisting of rice and chicken",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Iranian"]
   }
 ]
