@@ -32,7 +32,7 @@ function FoodCard({
   );
 
   return (
-    <div className="bg-lightgray flex h-[336] flex-col gap-3 rounded-xl p-4">
+    <div className="bg-lightgray flex flex-col gap-3 rounded-xl p-4">
       <div className="flex gap-3">
         <img
           src={`../assets/foods/${image}.png`}
