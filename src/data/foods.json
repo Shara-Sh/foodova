@@ -41,10 +41,18 @@
   },
   {
     "id": 6,
-    "name": "Seasonal Salad",
+    "name": "Cabbage Salad",
     "description": "Colorful and delicious side dish! It's made with cabbage",
     "ingredients": ["Carrot", "Cabbage"],
     "mealType": ["Salad"],
     "cuisine": ["Netherlands"]
+  },
+  {
+    "id": 7,
+    "name": "Pasta Alfredo",
+    "description": "This rich and creamy fettuccine Alfredo",
+    "ingredients": ["Pasta", "Cheese"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Italian"]
   }
 ]
