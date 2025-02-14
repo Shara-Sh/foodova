@@ -2,13 +2,13 @@ import foods from "../data/foods.json";
 import { Soup } from "lucide-react";
 
 type FilterCuisineProps = {
-  onCuisineSelect: (ingredient: string) => void;
-  selectedCuisines: string[];
+  onCuisineSelect: (ingredient: string | null) => void;
+  selectedCuisine: string | null;
 };
 
 function FilterCuisine({
   onCuisineSelect,
-  selectedCuisines,
+  selectedCuisine,
 }: FilterCuisineProps) {
   const allCuisine = foods.flatMap((food) => food.cuisine);
 
@@ -26,10 +26,10 @@ function FilterCuisine({
         {uniqueCuisines.map((cuisine, index) => (
           <li
             key={index}
-            onClick={() => onCuisineSelect(cuisine)}
-            className={`${
-              selectedCuisines.includes(cuisine) ? "bg-white" : ""
-            }`}
+            onClick={() =>
+              onCuisineSelect(selectedCuisine === cuisine ? null : cuisine)
+            }
+            className={`${selectedCuisine === cuisine ? "bg-white" : ""}`}
           >
             {cuisine}
           </li>

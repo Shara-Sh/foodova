@@ -2,13 +2,13 @@ import foods from "../data/foods.json";
 import { Utensils } from "lucide-react";
 
 type FilterMealTypeProps = {
-  onMealTypeSelect: (mealType: string) => void;
-  selectedMealTypes: string[];
+  onMealTypeSelect: (mealType: string | null) => void;
+  selectedMealType: string | null;
 };
 
 function FilterMealType({
   onMealTypeSelect,
-  selectedMealTypes,
+  selectedMealType,
 }: FilterMealTypeProps) {
   const allMealType = foods.flatMap((food) => food["mealType"]);
 
@@ -26,10 +26,10 @@ function FilterMealType({
         {uniqueMealTypes.map((mealType, index) => (
           <li
             key={index}
-            onClick={() => onMealTypeSelect(mealType)}
-            className={`${
-              selectedMealTypes.includes(mealType) ? "bg-white" : ""
-            }`}
+            onClick={() =>
+              onMealTypeSelect(selectedMealType === mealType ? null : mealType)
+            }
+            className={`${selectedMealType === mealType ? "bg-white" : ""}`}
           >
             {mealType}
           </li>
