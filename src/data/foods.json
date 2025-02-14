@@ -13,7 +13,7 @@
     "description": "stew consisting of diced mutton, tomatoes, split peas, onion, and dried lime, garnished with golden, thinly sliced crispy potatoes.",
     "ingredients": ["Split Peas", "Potato", "Rice"],
     "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["Iranian"]
+    "cuisine": ["Persian"]
   },
   {
     "id": 3,
@@ -34,10 +34,10 @@
   {
     "id": 5,
     "name": "Tahchin",
-    "description": "Iranian rice dish primarily consisting of rice and chicken",
+    "description": "Persian rice dish primarily consisting of rice and chicken",
     "ingredients": ["Chicken", "Rice"],
     "mealType": ["Lunch", "Dinner"],
-    "cuisine": ["Iranian"]
+    "cuisine": ["Persian"]
   },
   {
     "id": 6,
@@ -51,8 +51,40 @@
     "id": 7,
     "name": "Pasta Alfredo",
     "description": "This rich and creamy fettuccine Alfredo",
-    "ingredients": ["Pasta", "Cheese"],
+    "ingredients": ["Pasta", "Cheese", "Mushroom"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Italian"]
+  },
+  {
+    "id": 8,
+    "name": "Pepperoni Pizza",
+    "description": "A classic Italian pizza topped with spicy pepperoni slices, melted cheese",
+    "ingredients": ["Pepperoni", "Cheese"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Italian"]
+  },
+  {
+    "id": 9,
+    "name": "Salami Pizza",
+    "description": "A classic Italian-American pizza topped with spicy pepperoni slices, melted cheese, and a flavorful tomato sauce on a crispy crust",
+    "ingredients": ["Salami", "Cheese"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Italian"]
+  },
+  {
+    "id": 10,
+    "name": "Harisa / Halim",
+    "description": "Halim is a popular dish in Middle Eastern and South Asian cuisine",
+    "ingredients": ["Chicken", "Beef"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Armenian", "Persian"]
+  },
+  {
+    "id": 11,
+    "name": "Chicken",
+    "description": "A versatile and protein-rich dish",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Classic"]
   }
 ]
