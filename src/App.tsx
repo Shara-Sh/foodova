@@ -12,8 +12,8 @@ function App() {
   const [isFilter, setIsFilter] = useState(window.innerWidth >= 1024);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
-  const [selectedMealTypes, setSelectedMealTypes] = useState<string[]>([]);
-  const [selectedCuisines, setSelectedCuisines] = useState<string[]>([]);
+  const [selectedMealType, setSelectedMealType] = useState<string | null>(null);
+  const [selectedCuisine, setSelectedCuisine] = useState<string | null>(null);
 
   const filteredFoods = foods
     .filter((food) =>
@@ -27,16 +27,12 @@ function App() {
           ),
     )
     .filter((food) =>
-      selectedMealTypes.length === 0
-        ? true // If no ingredients are selected, show all
-        : selectedMealTypes.every((mealType) =>
-            food.mealType.includes(mealType),
-          ),
+      selectedMealType === null
+        ? true
+        : food.mealType.includes(selectedMealType),
     )
     .filter((food) =>
-      selectedCuisines.length === 0
-        ? true // If no ingredients are selected, show all
-        : selectedCuisines.every((cuisine) => food.cuisine.includes(cuisine)),
+      selectedCuisine === null ? true : food.cuisine.includes(selectedCuisine),
     )
     .sort((a, b) => b.id - a.id); // Sort by ID (newest first)
 
@@ -55,31 +51,11 @@ function App() {
   };
 
   const handleMealTypeSelect = (mealType: string | null) => {
-    if (mealType === null) {
-      // Handle clearing all selected ingredients
-      setSelectedMealTypes([]);
-    } else {
-      setSelectedMealTypes(
-        (prevSelected) =>
-          prevSelected.includes(mealType)
-            ? prevSelected.filter((item) => item !== mealType) // Deselect if already selected
-            : [...prevSelected, mealType], // Add if not selected
-      );
-    }
+    setSelectedMealType(mealType);
   };
 
   const handleCuisineSelect = (cuisine: string | null) => {
-    if (cuisine === null) {
-      // Handle clearing all selected ingredients
-      setSelectedCuisines([]);
-    } else {
-      setSelectedCuisines(
-        (prevSelected) =>
-          prevSelected.includes(cuisine)
-            ? prevSelected.filter((item) => item !== cuisine) // Deselect if already selected
-            : [...prevSelected, cuisine], // Add if not selected
-      );
-    }
+    setSelectedCuisine(cuisine);
   };
 
   return (
@@ -104,11 +80,11 @@ function App() {
                 />
                 <FilterMealType
                   onMealTypeSelect={handleMealTypeSelect}
-                  selectedMealTypes={selectedMealTypes}
+                  selectedMealType={selectedMealType}
                 />
                 <FilterCuisine
                   onCuisineSelect={handleCuisineSelect}
-                  selectedCuisines={selectedCuisines}
+                  selectedCuisine={selectedCuisine}
                 />
               </div>
             ) : null}
@@ -141,11 +117,11 @@ function App() {
             />
             <FilterMealType
               onMealTypeSelect={handleMealTypeSelect}
-              selectedMealTypes={selectedMealTypes}
+              selectedMealType={selectedMealType}
             />
             <FilterCuisine
               onCuisineSelect={handleCuisineSelect}
-              selectedCuisines={selectedCuisines}
+              selectedCuisine={selectedCuisine}
             />
           </div>
         </div>
