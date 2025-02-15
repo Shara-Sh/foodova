@@ -86,5 +86,13 @@
     "ingredients": ["Chicken", "Rice"],
     "mealType": ["Lunch", "Dinner"],
     "cuisine": ["Classic"]
+  },
+  {
+    "id": 12,
+    "name": "Curry",
+    "description": "A dish composed with a sauce or gravy seasoned with a mixture of ground spices ",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["Lunch", "Dinner"],
+    "cuisine": ["Indian"]
   }
 ]
