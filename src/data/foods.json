@@ -4,7 +4,7 @@
     "name": "Mashed Potatoes",
     "description": "boiled or steamed potatoes with butter, salt and pepper.",
     "ingredients": ["Potato"],
-    "mealType": ["Breakfast", "Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Irish"]
   },
   {
@@ -12,7 +12,7 @@
     "name": "Gheimeh",
     "description": "stew consisting of diced mutton, tomatoes, split peas, onion, and dried lime, garnished with golden, thinly sliced crispy potatoes.",
     "ingredients": ["Split Peas", "Potato", "Rice"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Persian"]
   },
   {
@@ -28,7 +28,7 @@
     "name": "Cheesy Chicken Nuggets",
     "description": "Crispy on the outside and tender on the inside",
     "ingredients": ["Chicken", "Cheese", "Salami"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["United States"]
   },
   {
@@ -36,7 +36,7 @@
     "name": "Tahchin",
     "description": "Persian rice dish primarily consisting of rice and chicken",
     "ingredients": ["Chicken", "Rice"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Persian"]
   },
   {
@@ -52,7 +52,7 @@
     "name": "Pasta Alfredo",
     "description": "This rich and creamy fettuccine Alfredo",
     "ingredients": ["Pasta", "Cheese", "Mushroom"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Italian"]
   },
   {
@@ -60,7 +60,7 @@
     "name": "Pepperoni Pizza",
     "description": "A classic Italian pizza topped with spicy pepperoni slices, melted cheese",
     "ingredients": ["Pepperoni", "Cheese"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Italian"]
   },
   {
@@ -68,7 +68,7 @@
     "name": "Salami Pizza",
     "description": "A classic Italian-American pizza topped with spicy pepperoni slices, melted cheese, and a flavorful tomato sauce on a crispy crust",
     "ingredients": ["Salami", "Cheese"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Italian"]
   },
   {
@@ -76,7 +76,7 @@
     "name": "Harisa / Halim",
     "description": "Halim is a popular dish in Middle Eastern and South Asian cuisine",
     "ingredients": ["Chicken", "Beef"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Armenian", "Persian"]
   },
   {
@@ -84,7 +84,47 @@
     "name": "Chicken",
     "description": "A versatile and protein-rich dish",
     "ingredients": ["Chicken", "Rice"],
-    "mealType": ["Lunch", "Dinner"],
+    "mealType": ["Dish"],
     "cuisine": ["Classic"]
+  },
+  {
+    "id": 12,
+    "name": "Curry",
+    "description": "A dish composed with a sauce or gravy seasoned with a mixture of ground spices",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["Dish"],
+    "cuisine": ["Indian"]
+  },
+  {
+    "id": 13,
+    "name": "Meatball",
+    "description": "A meatball is ground meat rolled into a ball",
+    "ingredients": ["Beef", "Rice"],
+    "mealType": ["Dish"],
+    "cuisine": ["Swedish"]
+  },
+  {
+    "id": 14,
+    "name": "Baked Beans",
+    "description": "white common beans that are parboiled and then baked in sauce at low temperature for a lengthy period",
+    "ingredients": ["Bean"],
+    "mealType": ["Dish"],
+    "cuisine": ["United States"]
+  },
+  {
+    "id": 15,
+    "name": "Spanish Rice",
+    "description": "Spanish rice, also called Mexican rice or arroz rojo, is a type of rice pilaf cooked with onions and garlic",
+    "ingredients": ["Rice"],
+    "mealType": ["Dish"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 16,
+    "name": "Shirazi salad",
+    "description": "Shirazi salad has been described as being akin to a national salad in Iran, and it is a common meal accompaniment",
+    "ingredients": ["Tomato", "Onion", "Cucumber"],
+    "mealType": ["Salad"],
+    "cuisine": ["Persian"]
   }
 ]
