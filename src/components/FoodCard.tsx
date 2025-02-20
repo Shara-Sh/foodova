@@ -35,7 +35,7 @@ function FoodCard({
     <div className="bg-lightgray flex flex-col gap-3 rounded-xl p-4">
       <div className="flex gap-3">
         <img
-          src={`../assets/foods/${image}.png`}
+          src={`../assets/foods/${image}.jpg`}
           alt={name}
           className="aspect-square max-h-36 w-36 rounded-xl object-cover"
         />

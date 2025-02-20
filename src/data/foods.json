@@ -60,7 +60,7 @@
     "name": "Pepperoni Pizza",
     "description": "A classic Italian pizza topped with spicy pepperoni slices, melted cheese",
     "ingredients": ["Pepperoni", "Cheese"],
-    "mealType": ["Dish"],
+    "mealType": ["Fast Food"],
     "cuisine": ["Italian"]
   },
   {
@@ -68,7 +68,7 @@
     "name": "Salami Pizza",
     "description": "A classic Italian-American pizza topped with spicy pepperoni slices, melted cheese, and a flavorful tomato sauce on a crispy crust",
     "ingredients": ["Salami", "Cheese"],
-    "mealType": ["Dish"],
+    "mealType": ["Fast Food"],
     "cuisine": ["Italian"]
   },
   {
@@ -121,10 +121,50 @@
   },
   {
     "id": 16,
-    "name": "Shirazi salad",
+    "name": "Shirazi Salad",
     "description": "Shirazi salad has been described as being akin to a national salad in Iran, and it is a common meal accompaniment",
     "ingredients": ["Tomato", "Onion", "Cucumber"],
     "mealType": ["Salad"],
     "cuisine": ["Persian"]
+  },
+  {
+    "id": 17,
+    "name": "Salmon",
+    "description": "Salmon is a common food fish classified as an oily fish with a rich content of protein and omega-3 fatty acids",
+    "ingredients": ["Fish"],
+    "mealType": ["Dish"],
+    "cuisine": ["Classic"]
+  },
+  {
+    "id": 18,
+    "name": "Kuku",
+    "description": "is an Iranian and dish made of whipped eggs with various ingredients folded in",
+    "ingredients": ["Green"],
+    "mealType": ["Dish"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 19,
+    "name": "Kebab",
+    "description": "Kebabs consist of cut up ground meat",
+    "ingredients": ["Beef", "Rice"],
+    "mealType": ["BBQ"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 20,
+    "name": "Chicken Kebab",
+    "description": "Middle-Eastern style grilled chicken kebabs",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["BBQ"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 21,
+    "name": "Sandwich",
+    "description": "A sandwich is a dish typically consisting variously of meat, cheese, sauces, and vegetables used as a filling between slices of bread",
+    "ingredients": ["Chicken", "Beef"],
+    "mealType": ["Fast Food"],
+    "cuisine": ["Classic"]
   }
 ]
