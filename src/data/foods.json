@@ -158,5 +158,13 @@
     "ingredients": ["Chicken", "Rice"],
     "mealType": ["BBQ"],
     "cuisine": ["Persian"]
+  },
+  {
+    "id": 21,
+    "name": "Sandwich",
+    "description": "A sandwich is a dish typically consisting variously of meat, cheese, sauces, and vegetables used as a filling between slices of bread",
+    "ingredients": ["Chicken", "Beef"],
+    "mealType": ["Fast Food"],
+    "cuisine": ["Classic"]
   }
 ]
