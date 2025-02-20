@@ -60,7 +60,7 @@
     "name": "Pepperoni Pizza",
     "description": "A classic Italian pizza topped with spicy pepperoni slices, melted cheese",
     "ingredients": ["Pepperoni", "Cheese"],
-    "mealType": ["Dish"],
+    "mealType": ["Fast Food"],
     "cuisine": ["Italian"]
   },
   {
@@ -68,7 +68,7 @@
     "name": "Salami Pizza",
     "description": "A classic Italian-American pizza topped with spicy pepperoni slices, melted cheese, and a flavorful tomato sauce on a crispy crust",
     "ingredients": ["Salami", "Cheese"],
-    "mealType": ["Dish"],
+    "mealType": ["Fast Food"],
     "cuisine": ["Italian"]
   },
   {
@@ -138,9 +138,25 @@
   {
     "id": 18,
     "name": "Kuku",
-    "description": " is an Iranian and dish made of whipped eggs with various ingredients folded in",
+    "description": "is an Iranian and dish made of whipped eggs with various ingredients folded in",
     "ingredients": ["Green"],
     "mealType": ["Dish"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 19,
+    "name": "Kebab",
+    "description": "Kebabs consist of cut up ground meat",
+    "ingredients": ["Beef", "Rice"],
+    "mealType": ["BBQ"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 20,
+    "name": "Chicken Kebab",
+    "description": "Middle-Eastern style grilled chicken kebabs",
+    "ingredients": ["Chicken", "Rice"],
+    "mealType": ["BBQ"],
     "cuisine": ["Persian"]
   }
 ]
