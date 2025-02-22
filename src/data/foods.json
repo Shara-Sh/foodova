@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Mashed Potatoes",
-    "description": "boiled or steamed potatoes with butter, salt and pepper.",
+    "description": "Boiled or steamed potatoes mashed with butter, salt, and pepper for a creamy texture",
     "ingredients": ["Potato"],
     "mealType": ["Dish"],
     "cuisine": ["Irish"]
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "name": "Seasonal Salad",
-    "description": "Classic Salad",
+    "description": "A fresh and healthy salad made with seasonal vegetables",
     "ingredients": ["Tomato", "Carrot", "Lettuce"],
     "mealType": ["Salad"],
     "cuisine": ["Classic"]
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "name": "Spanish Rice",
+    "name": "Estamboli Polo",
     "description": "Spanish rice, also called Mexican rice or arroz rojo, is a type of rice pilaf cooked with onions and garlic",
     "ingredients": ["Rice"],
     "mealType": ["Dish"],
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "name": "Kuku",
-    "description": "is an Iranian and dish made of whipped eggs with various ingredients folded in",
+    "description": "An Iranian dish made of whipped eggs mixed with herbs or vegetables, similar to a frittata",
     "ingredients": ["Green"],
     "mealType": ["Dish"],
     "cuisine": ["Persian"]
@@ -166,5 +166,53 @@
     "ingredients": ["Chicken", "Beef"],
     "mealType": ["Fast Food"],
     "cuisine": ["Classic"]
+  },
+  {
+    "id": 22,
+    "name": "Borscht",
+    "description": "A bowl of borscht garnished with sour cream and dill",
+    "ingredients": ["Tomato", "Beetroot"],
+    "mealType": ["Soup"],
+    "cuisine": ["Russian"]
+  },
+  {
+    "id": 23,
+    "name": "Beeftake",
+    "description": "Cut of beef with rice",
+    "ingredients": ["Beef", "Rice"],
+    "mealType": ["Dish"],
+    "cuisine": ["Classic"]
+  },
+  {
+    "id": 24,
+    "name": "Chicken Strips",
+    "description": "Crispy, breaded chicken strips, deep-fried to golden perfection, often served with dipping sauces",
+    "ingredients": ["Chicken"],
+    "mealType": ["Fast Food"],
+    "cuisine": ["United States"]
+  },
+  {
+    "id": 25,
+    "name": "Sour Chicken",
+    "description": "A tangy and flavorful Persian dish featuring chicken cooked with sour ingredients",
+    "ingredients": ["Chicken"],
+    "mealType": ["Dish"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 26,
+    "name": "Barley Soup",
+    "description": "A hearty and nutritious soup made with barley, vegetables, and aromatic spices, often enjoyed as a warming dish in various cuisines",
+    "ingredients": ["Barley"],
+    "mealType": ["Soup"],
+    "cuisine": ["Scotland"]
+  },
+  {
+    "id": 27,
+    "name": "Shawarma",
+    "description": "A popular Middle Eastern dish consisting of thinly sliced marinated meat, cooked on a vertical rotisserie and served in flatbread with vegetables and sauces",
+    "ingredients": ["Beef", "Chicken", "Ham"],
+    "mealType": ["Fast Food"],
+    "cuisine": ["Middle Eastern"]
   }
 ]
