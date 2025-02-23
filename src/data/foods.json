@@ -214,5 +214,61 @@
     "ingredients": ["Beef", "Chicken", "Ham"],
     "mealType": ["Fast Food"],
     "cuisine": ["Middle Eastern"]
+  },
+  {
+    "id": 28,
+    "name": "Red velvet cake",
+    "description": "Red velvet cake is a red-colored layer cake with cream cheese or ermine icing",
+    "ingredients": ["Vanilla"],
+    "mealType": ["Cake"],
+    "cuisine": ["Classic"]
+  },
+  {
+    "id": 29,
+    "name": "Lentil Rice",
+    "description": "A Persian dish made with cooked lentils and rice, often flavored with caramelized onions and spices",
+    "ingredients": ["Lentil", "Rice"],
+    "mealType": ["Dish"],
+    "cuisine": ["Persian"]
+  },
+  {
+    "id": 30,
+    "name": "Lentil",
+    "description": "A hearty and nutritious soup made with lentils, vegetables, and spices, commonly enjoyed in Middle Eastern cuisine",
+    "ingredients": ["Lentil"],
+    "mealType": ["Soup"],
+    "cuisine": ["Middle Eastern"]
+  },
+  {
+    "id": 31,
+    "name": "Quinoa Salad",
+    "description": "A nutritious and refreshing salad made with quinoa, tomatoes, cucumbers, and a light dressing, originating from South America",
+    "ingredients": ["Tomato", "Cucumber", "Quinoa"],
+    "mealType": ["Salad"],
+    "cuisine": ["Peru", "Bolivia"]
+  },
+  {
+    "id": 32,
+    "name": "Tomato Soup",
+    "description": "A smooth and flavorful soup made from ripe tomatoes, often seasoned with garlic, onions, and herbs",
+    "ingredients": ["Tomato"],
+    "mealType": ["Soup"],
+    "cuisine": ["Spain"]
+  },
+  {
+    "id": 33,
+    "name": "Corn Soup",
+    "description": "A creamy or broth-based soup made with sweet corn, often enhanced with butter, cream, and seasonings",
+    "ingredients": ["Corn"],
+    "mealType": ["Soup"],
+    "cuisine": ["United States"]
+  },
+  {
+    "id": 34,
+    "name": "Steak",
+    "description": "A thick, juicy cut of beef, grilled or pan-seared to perfection, often served with sides like potatoes and vegetables",
+    "ingredients": ["Beef"],
+    "mealType": ["Dish"],
+    "cuisine": ["United States"]
   }
 ]
